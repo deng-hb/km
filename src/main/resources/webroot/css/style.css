@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+select {
+  height: 30px;
+}
+input {
+  height: 26px;
+}
+body {
+  background-color: #f1f1f1;
+}
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#k104-container {
+  width: 1235px;
+  height: 371px;
+}
+#k104 {
+  width: 1235px;
+  height: 371px;
+  background: url('../images/keyboard-layout-104.png') no-repeat;
+}
+
+#k84-container {
+  width: 884px;
+  height: 344px;
+}
+#k84 {
+  width: 884px;
+  height: 344px;
+  background: url('../images/keyboard-layout-84.png') no-repeat;
+}
+
+#kaw-container {
+  width: 803px;
+  height: 343px;
+}
+#kaw {
+  width: 803px;
+  height: 343px;
+  background: url('../images/keyboard-layout-apple.png') no-repeat;
+}
+
+#total {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+#total h2 {
+  color: #999;
+}
+#total h3 {
+  color: #666;
+}
+#total span {
+  color: #333;
+}

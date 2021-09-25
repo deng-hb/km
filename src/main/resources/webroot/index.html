@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8" />
+    <title>KM</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+<select id="keyboard-layout">
+    <option value="k104">ANSI 104</option>
+    <option value="k84">Keycool 84</option>
+    <option value="kaw">Apple Wireless</option>
+</select>
+
+<select id="last-time">
+    <option value="">Day Range</option>
+    <option value="30">Last 30 second</option>
+    <option value="60">Last 1 minutes</option>
+    <option value="180">Last 3 minutes</option>
+    <option value="600">Last 10 minutes</option>
+    <option value="1800">Last 30 minutes</option>
+    <option value="6000">Last 1 hour</option>
+    <option value="16000">Last 3 hour</option>
+    <option value="36000">Last 6 hour</option>
+</select>
+
+<div id="day-range" style="display: inline">
+    <input id="day" type="date" />
+    <input id="time-start" type="time" />
+    ~
+    <input id="time-end" type="time" />
+</div>
+
+<div id="k104-container" class="center">
+    <div id="k104"></div>
+</div>
+<div id="k84-container" style="display: none;" class="center">
+    <div id="k84"></div>
+</div>
+<div id="kaw-container" style="display: none;" class="center">
+    <div id="kaw"></div>
+</div>
+
+<div id="total">
+    <h2>Total</h2>
+    <h3>Mouse: <span id="total-mouse">0</span></h3>
+    <h3>Keyboard: <span id="total-keyboard">0</span></h3>
+</div>
+
+<script src="js/heatmap.js"></script>
+<script src="js/layout-data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
